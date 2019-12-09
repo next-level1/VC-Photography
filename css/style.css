@@ -34,7 +34,7 @@ body {
         position: -webkit-sticky;
         font-family: var(--title-font-family);
         letter-spacing: 1.5px;
-        transform: translateX(30em);
+        transform: translateX(26em);
     }
     .navbar a {
         float: left;
@@ -64,7 +64,6 @@ body {
         background-color: inherit;
         font-family: var(--title-font-family);
         margin: 0;
-        z-index: 5;
     }
     .dropdown-content {
         display: none;
@@ -82,7 +81,6 @@ body {
         display: block;
         text-align: left;
         border-bottom: 1px solid #C5C5C5;
-        z-index: 5;
     }
     .dropdown-content a:hover {color: #696969; z-index: 5;}
     .dropdown:hover .dropdown-content {display: block; z-index: 5;}
