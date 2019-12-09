@@ -5,6 +5,7 @@
 @import url('../SCSS/scssmain.scss');
 body {
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 @media (min-width: 1000px) {
@@ -33,10 +34,11 @@ body {
         position: -webkit-sticky;
         font-family: var(--title-font-family);
         letter-spacing: 1.5px;
+        transform: translateX(30em);
     }
     .navbar a {
         float: left;
-        padding: 16px 20px;
+        padding: 16px 50px;
         font-size: var(--navbar-font-size);
         color: var(--text-color-2);
         text-decoration: none;
@@ -51,24 +53,26 @@ body {
     .dropdown {
         float: left;
         overflow: hidden;
+        z-index: 5;
     }
     .dropdown .dropbtn {
         border: none;
         outline: none;
         color: var(--text-color-2);
         font-size: var(--navbar-font-size);
-        padding: 14px 16px;
+        padding: 16px 50px;
         background-color: inherit;
         font-family: var(--title-font-family);
         margin: 0;
+        z-index: 5;
     }
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: transparent;
-        min-width: 160px;
+        min-width: 190px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
+        z-index: 5;
     }
     .dropdown-content a {
         float: none;
@@ -78,8 +82,13 @@ body {
         display: block;
         text-align: left;
         border-bottom: 1px solid #C5C5C5;
+        z-index: 5;
     }
-    .dropdown-content a:hover {color: #696969;}
-    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown-content a:hover {color: #696969; z-index: 5;}
+    .dropdown:hover .dropdown-content {display: block; z-index: 5;}
     .dropdown:hover .dropbtn{color: #696969}
+}
+
+@media (max-width: 1000px){
+
 }
