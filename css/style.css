@@ -32,6 +32,7 @@ body {
         position: sticky;
         position: -webkit-sticky;
         font-family: var(--title-font-family);
+        letter-spacing: 1.5px;
     }
     .navbar a {
         float: left;
