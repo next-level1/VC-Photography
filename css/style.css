@@ -1,0 +1,5 @@
+@import url('variables.css');
+@import url('animations.css');
+@import url('typography.css');
+@import url('../JavaScript/main.js');
+@import url('../SCSS/scssmain.scss');
