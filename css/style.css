@@ -3,3 +3,50 @@
 @import url('typography.css');
 @import url('../JavaScript/main.js');
 @import url('../SCSS/scssmain.scss');
+
+body{
+    margin: 0 auto;
+}
+
+@media (min-width: 1000px){
+    body{
+        font-family: var(--default-font-family);
+    }
+    .topbar{
+        overflow: hidden;
+        background-color: #333333;
+        height: 30px;
+    }
+
+    .header{
+        background: white;
+        font-family: var(--header-font-family);
+        font-size: 90px;
+        padding: 1em 4em;
+        color: var(--text-color-2);
+        border-bottom: 0.5px solid #C5C5C5;
+        align-content: center;
+    }
+
+    .navbar{
+        overflow: hidden;
+        background: transparent;
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        font-family: var(--title-font-family);
+    }
+
+    .navbar a{
+        float: left;
+        padding: 16px 20px;
+        font-size: var(--navbar-font-size);
+        color: var(--text-color-2);
+        text-decoration: none;
+    }
+    .navbar a i{margin-left: 2px;}
+
+    .navbar a:hover{
+        color: #696969;
+    }
+}
