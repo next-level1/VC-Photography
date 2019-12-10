@@ -138,6 +138,9 @@ body {
         align-content: center;
         position: absolute;
         font-family: var(--title-font-family);
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
     }
     .btn {
         background-color: transparent;
