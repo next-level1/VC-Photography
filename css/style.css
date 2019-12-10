@@ -16,7 +16,7 @@ body {
         overflow: hidden;
         background-color: #333333;
         height: 30px;
-        width: 100%;
+        width: 200em;
     }
     .header {
         background: white;
@@ -35,7 +35,7 @@ body {
         position: -webkit-sticky;
         font-family: var(--title-font-family);
         letter-spacing: 1.5px;
-        transform: translateX(23em);
+        transform: translateX(21em);
     }
     .navbar a {
         float: left;
@@ -119,6 +119,7 @@ body {
         overflow: hidden;
         background-color: #333333;
         height: 30px;
+        width: 100%;
     }
     .header {
         background: white;
