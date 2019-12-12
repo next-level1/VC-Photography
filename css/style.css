@@ -35,7 +35,8 @@ body {
         position: -webkit-sticky;
         font-family: var(--title-font-family);
         letter-spacing: 1.5px;
-        transform: translateX(21em);
+        transform: translateX(20em);
+        z-index: 5;
     }
     .navbar a {
         float: left;
@@ -106,7 +107,19 @@ body {
         display: none;
     }
     .front-gallery{
-
+        display: grid;
+        grid-template-columns: repeat(3, 22em);
+        grid-template-rows: 19em 19em 19em;
+        grid-gap: 2em;
+    }
+    .front-gallery div{
+        transform: translateX(-21.5em) translateY(5em);
+        color: rgba(255, 255, 255, 0.6);
+        border-radius: 7px;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 4.5em;
+        font-family: var(--header-font-family);
     }
 }
 
